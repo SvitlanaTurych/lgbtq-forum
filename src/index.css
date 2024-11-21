@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500;
+  }
+}
